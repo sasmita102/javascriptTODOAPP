@@ -5,11 +5,11 @@ let flag = true;
 
 function initialisation() {
   if (flag) {
-    //document.getElementById("blur-2").style.display = "none";    
+    
     document.getElementById("blur").style.display = "block";
   } else {
     document.getElementById("blur").style.display = "none";
-    //document.getElementById("blur-2").style.display = "block";
+    
   }
   if (todoItems.length === 0) {
     console.log(document.getElementById("noTodo"));
@@ -164,9 +164,7 @@ function toggle() {
   var blur;
   if (flag) {
     blur = document.getElementById("blur");
-  }// else {
-    //blur = document.getElementById("blur-2");
-  //}
+  }
   blur.classList.toggle("active");
 
   var popup = document.getElementById("pop");
@@ -178,9 +176,8 @@ function toggleAddItem(item) {
   var blur;
   if (flag) {
     blur = document.getElementById("blur");
-  } //else {
-    //blur = document.getElementById("blur-2");
- // }
+  } 
+
   blur.classList.toggle("active");
 
   var popup = document.getElementById("popAddItem");
@@ -198,37 +195,4 @@ function redirect(element) {
     }
   }
 }
-  /*
-  flag = false;
-  initialisation();
-  document.getElementById("currentHeading").textContent = currentTodo.heading;
-  document.getElementById("currentHeading-1").textContent = currentTodo.heading;
-  document
-    .getElementById("currentHeading-1")
-    .parentNode.setAttribute("data-key", currentTodo.id);
-
-  console.log(currentTodo);
-  let e = document.getElementById("singleList");
-  var child = e.lastElementChild;
-  while (child) {
-    e.removeChild(child);
-    child = e.lastElementChild;
-  }
-  for (let i = 0; i < currentTodo.subTask.length; i++) {
-    let classToPut = currentTodo.subTask[i].marked
-      ? "card-item-2 card-item-checked"
-      : "card-item-2";
-    let rest = currentTodo.subTask[i].marked
-      ? ""
-      : '<button class = "markDone" onclick="markCompleted(this)">Mark Done</button>';
-    const node = document.createElement("li");
-    node.setAttribute("class", classToPut);
-    node.setAttribute("data-key", currentTodo.subTask[i].id);
-    node.innerHTML = ` ${currentTodo.subTask[i].name} ${rest}`;
-    e.append(node);
-  }
-}
-function goBack() {
-  flag = true;
-  renderTodo();
-}*/
+  

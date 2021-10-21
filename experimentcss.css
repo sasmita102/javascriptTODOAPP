@@ -55,20 +55,7 @@ body {
     justify-content: space-between;
   }
   
-  /*.card-2 {
-    min-height: 355px;
-    min-width: 229px;
-    border: 1px solid #e74c3c;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 10px 10px 10px #00000029;
-    border-radius: 10px;
-    text-align: center;
-    margin: 10px;
-    padding-bottom: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }*/
+  
   
   .markDone {
     font-size: 10px;
@@ -127,22 +114,7 @@ body {
     padding-left: 0;
   }
   
-  /*.flex-row-center {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }*/
   
-  /*.list-card {
-    height: 355px;
-    width: 400px;
-    min-width: 250px;
-    border: 1px solid #e74c3c;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    box-shadow: 10px 10px 10px #00000029;
-    border-radius: 10px;
-    text-align: center;
-  }*/
   
   .container#blur.active {
     filter: blur(20px);
@@ -150,12 +122,6 @@ body {
     user-select: none;
   }
   
-  /*.container#blur-2.active {
-    filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
-  }
-  */
   .popup {
     position: fixed;
     top: 40%;
@@ -221,13 +187,7 @@ body {
     align-self: flex-end;
   }
   
-  /*.footer-2 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    align-self: flex-end;
-  }
-  */
+  
   .btn-completed {
     font-size: 15px;
     width: 32px;
